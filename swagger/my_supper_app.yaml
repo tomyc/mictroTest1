@@ -3,12 +3,16 @@ swagger: "2.0"
 info:
   title: "EIT API"
   version: "1.0"
+  description: 'Specifies the API spec'
 
 basePath: /api/v1
 
 paths:
   /items/:
     get:
+      tags: [
+        'Instead of default'
+      ]
       responses:
         '200':
           description: 'Fetch a list of items'
@@ -20,8 +24,10 @@ paths:
 definitions:
   Item:
     type: object
+    description: 'Request details for Example Definition'
     properties:
       id:
         type: integer
+        description: 'Specifies the action to be taken'
         format: int64
       name: {type: string}
