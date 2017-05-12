@@ -6,6 +6,7 @@ info:
   description: 'Specifies the API spec'
 
 basePath: /api/v1
+host: localhost
 
 paths:
   /items/:
